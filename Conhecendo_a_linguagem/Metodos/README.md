@@ -1,3 +1,5 @@
+<h1>Métodos em Java</h1>
+
 <p>Os métodos em Java são blocos de código que realizam tarefas específicas e que podem ser chamados e executados várias vezes durante a execução de um programa. Em geral, um método é definido com um nome, um tipo de retorno (se houver) e uma lista de parâmetros.</p>
 
 <h2>Estrutura de um método em Java</h2>
