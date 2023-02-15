@@ -10,12 +10,6 @@ public class Metodos {
 
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
         System.out.println(nomeCompleto);
-
-        float saldoBancario;
-        saldoBancario = 1000;
-
-        float saldoTotalBanco = saldoBancario(saldoBancario);
-        System.out.println("Seu saldo bancario é: " + saldoTotalBanco);
     }
 
     /*
@@ -27,7 +21,8 @@ public class Metodos {
         return "O resultado do método é: " + primeiroNome.concat(" ").concat(segundoNome);
     }
 
-    public static float saldoBancario(Float valorTotal) {
+    public static Float saldoBancario(Float valorTotal) {
+
         return valorTotal;
     }
 
