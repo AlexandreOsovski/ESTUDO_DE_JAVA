@@ -18,7 +18,7 @@ public class Metodos {
      */
     public static String nomeCompleto(String primeiroNome, String segundoNome) {
         // return primeiroNome + " " + segundoNome;
-        return "O resultado do método é: " + primeiroNome.concat(" ").concat(segundoNome);
+        return primeiroNome.concat(" ").concat(segundoNome);
     }
 
 }
