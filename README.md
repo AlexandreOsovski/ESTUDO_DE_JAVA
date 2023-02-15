@@ -1,6 +1,6 @@
 # ESTUDO_DE_JAVA
 
-#Banco de dados SQL e NoSQL
+<h1>Banco de dados SQL e NoSQL</h1>
 
 Este tópico aborda os tipos de banco de dados SQL e NoSQL, suas diferenças e suas respectivas aplicações. O SQL é uma linguagem de consulta estruturada que é usada para gerenciar bancos de dados relacionais, enquanto o NoSQL é uma abordagem não relacional que lida com dados não estruturados ou semiestruturados. Alguns exemplos de bancos de dados SQL incluem MySQL, PostgreSQL e Oracle, enquanto MongoDB, Cassandra e Couchbase são exemplos de bancos de dados NoSQL.
 
