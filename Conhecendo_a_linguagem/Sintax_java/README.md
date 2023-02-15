@@ -67,8 +67,8 @@ final String brasil = "Brasil";
 <p>Exemplo:</p>
 
 <pre>
-String nomeCompleto = "Alexandre";
-int idade = 10;
+String String = "Alexandre";
+int int = 10;
 </pre>
 
-<p>Não é recomendado usar nomes de variáveis que sejam iguais a palavras-chave da linguagem, como no exemplo acima onde "String" e "Int" foram usados como nomes de variáveis.</
+<p>Não usar nomes de variáveis que sejam iguais a palavras-chave da linguagem, como no exemplo acima onde "String" e "Int" foram usados como nomes de variáveis.</
