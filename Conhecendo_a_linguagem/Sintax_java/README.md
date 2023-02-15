@@ -37,19 +37,20 @@
 
 <ol>
 	<li>Exemplo:</li>
+</ol>
 	<pre>
 		String BRASIL = "Brasil";
 	</pre>
 
 	<p>Podemos deixar a variável com as letras todas maiúsculas, isso indica que nunca deve mudar a atribuição dela.</p>
-
+<ol>
 	<li>Exemplo:</li>
+</ol>
 	<pre>
 		final String brasil = "Brasil";
 	</pre>
 
 	<p>O tipo "final" determina que aquela variável nunca pode mudar.</p>
-</ol>
 
 <h2>Regras para nomear uma variável</h2>
 <p>Uma variável em Java pode conter apenas letras, underline, $ ou números de 0 a 9. Algumas regras para nomear variáveis em Java são:</p>
