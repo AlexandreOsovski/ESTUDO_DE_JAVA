@@ -21,9 +21,4 @@ public class Metodos {
         return "O resultado do método é: " + primeiroNome.concat(" ").concat(segundoNome);
     }
 
-    public static Float saldoBancario(Float valorTotal) {
-
-        return valorTotal;
-    }
-
 }
