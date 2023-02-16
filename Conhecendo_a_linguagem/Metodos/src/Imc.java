@@ -9,16 +9,26 @@ public class Imc {
         System.out.println(resultado);
     }
 
-    public static String codigoImcSemIdentacao(Double peso, Double altura) {
+    public static String codigoSemIdentacao(Double peso, Double altura) {
+        String resultado;
+        Double resultadoImc = peso / (altura * altura);
+        if (resultadoImc < 19) {
+            resultado = "Seu peso está baixo";
+        } else if (resultadoImc > 19 && resultadoImc < 25) {
+            resultado = "Seu peso é ideal";
+        } else {
+            resultado = "você está acima do peso";
+        }
+        return resultado;
+    }
+
+    public static String codigoImcComIdentacao(Double peso, Double altura) {
 
         String resultado;
-
         Double resultadoImc = peso / (altura * altura);
 
         if (resultadoImc < 19) {
-
             resultado = "Seu peso está baixo";
-
         } else if (resultadoImc > 19 && resultadoImc < 25) {
             resultado = "Seu peso é ideal";
         } else {
@@ -26,7 +36,6 @@ public class Imc {
         }
 
         return resultado;
-
     }
 
 }
