@@ -50,3 +50,50 @@ System.out.println(nomeCompleto);
 </code></pre>
 
 <p>Nesse exemplo, o método nomeCompleto é chamado com os argumentos primeiroNome e segundoNome, e o resultado é atribuído à variável nomeCompleto.</p>
+
+<br><br>
+ 
+<h1>A importância de identar um código</h1>
+
+<p>A identação é o processo de organizar o código de programação de forma que ele fique mais legível e estruturado. Ela consiste em utilizar espaços ou tabulações para alinhar blocos de código que fazem parte da mesma estrutura, como loops, condicionais, funções e classes.</p>
+
+<p>Identar o código não é apenas uma questão de estética, mas sim de boas práticas de programação. A identação torna o código mais fácil de ser lido, entendido e mantido por outros desenvolvedores. Quando o código é identado de forma adequada, fica mais claro para o leitor a lógica do programa, o que ajuda a evitar erros e bugs.</p>
+
+<p>Além disso, a identação também ajuda a manter a consistência do código. Quando todos os desenvolvedores seguem as mesmas regras de identação, o código fica mais uniforme e fácil de ser mantido. Isso é especialmente importante em projetos colaborativos, em que várias pessoas trabalham no mesmo código.</p>
+
+<p>Portanto, identar o código é uma prática fundamental para o desenvolvimento de software. Ela ajuda a garantir a legibilidade, a clareza e a consistência do código, o que é essencial para manter a qualidade do software e facilitar o trabalho em equipe.</p>
+
+<h2>Aqui vemos a importancia de uma boa identação do código com esses dois exemplos</h2>
+<code>
+public static String codigoSemIdentacao(Double peso, Double altura){
+String resultado;
+Double resultadoImc=peso/(altura*altura);
+if (resultadoImc < 19){
+resultado="Seu peso está baixo";
+}else if(resultadoImc>19&&resultadoImc<25){
+resultado="Seu peso é ideal";
+}else{
+resultado="você está acima do peso";
+}
+return resultado;
+}</code>
+
+<code>
+public static String codigoImcComIdentacao(Double peso, Double altura) {
+
+    String resultado;
+    Double resultadoImc = peso / (altura * altura);
+    
+    if (resultadoImc < 19) {
+        resultado = "Seu peso está baixo";
+    } else if (resultadoImc > 19 && resultadoImc < 25) {
+        resultado = "Seu peso é ideal";
+    } else {
+        resultado = "você está acima do peso";
+    }
+    
+    return resultado;
+}
+</code>
+
+<p>Perceba que um código bem identado, sua leitura se torna fácil e bem intuitiva!!</p>
