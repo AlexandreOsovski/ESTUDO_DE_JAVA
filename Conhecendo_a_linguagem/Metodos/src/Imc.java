@@ -13,11 +13,11 @@ public class Imc {
         String resultado;
         Double resultadoImc = peso / (altura * altura);
         if (resultadoImc < 19) {
-            resultado = "Seu peso está baixo";
+        resultado = "Seu peso está baixo";
         } else if (resultadoImc > 19 && resultadoImc < 25) {
-            resultado = "Seu peso é ideal";
+        resultado = "Seu peso é ideal";
         } else {
-            resultado = "você está acima do peso";
+        resultado = "você está acima do peso";
         }
         return resultado;
     }
