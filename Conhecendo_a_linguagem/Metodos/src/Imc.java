@@ -9,7 +9,7 @@ public class Imc {
         System.out.println(resultado);
     }
 
-    public static String codigoSemIdentacao(Double peso, Double altura) {
+    public static String codigoImcSemIdentacao(Double peso, Double altura) {
         String resultado;
         Double resultadoImc = peso / (altura * altura);
         if (resultadoImc < 19) {
