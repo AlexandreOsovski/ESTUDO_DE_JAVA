@@ -1,9 +1,5 @@
 package src;
 
-import java.io.ObjectInputFilter.Status;
-
-import javax.annotation.processing.SupportedOptions;
-
 public class OperadoresRelacionais {
     public static void main(String[] args) {
 
