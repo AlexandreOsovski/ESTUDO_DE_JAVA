@@ -9,6 +9,9 @@ public class PalavrasReservadas {
      */
 
     public static void main(String[] args) {
+
+        // Exemplos
+
         // if(){
         // }else{
         // }
