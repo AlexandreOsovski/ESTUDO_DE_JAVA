@@ -39,6 +39,11 @@ public class OperadoresRelacionais {
 
     }
 
+    /**
+     * @param valorUm
+     * @param valorDois
+     * @return
+     */
     public static String verificarValores(int valorUm, int valorDois) {
 
         String resposta;
@@ -47,9 +52,16 @@ public class OperadoresRelacionais {
             resposta = "valorUm é menor que valorDois";
         } else if (valorUm == valorDois) {
             resposta = "valorUm é igual a valorDois";
-        } else {
+        } else if (valorUm > valorDois) {
             resposta = "valorUm é maior que valorDois";
+        } else if (valorUm != valorDois) {
+            resposta = "valorUm é diferente de valorDois";
+        } else if (valorUm >= valorDois) {
+            resposta = "valorUm é maior ou igual a valorDois";
+        } else {
+            resposta = "valorUm é menor ou igual a valorDois";
         }
+
         return resposta;
     }
 
