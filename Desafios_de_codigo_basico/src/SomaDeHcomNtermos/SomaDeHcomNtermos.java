@@ -6,14 +6,15 @@ public class SomaDeHcomNtermos {
     public static void main(String[] Args) {
 
         double h = 0;
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Digite um número: ");
+            double n = scanner.nextDouble();
 
-        System.out.println("Digite um número: ");
-        double n = scanner.nextDouble();
-
-        for (int i = 1; i <= n; i++) {
-            h = h + (double) 1 / i;
+            for (int i = 1; i <= n; i++) {
+                h = h + (double) 1 / i;
+            }
         }
+
         System.out.println("O valor final é: " + Math.round(h));
 
     }

@@ -13,9 +13,9 @@ public class Metodos {
     }
 
     /*
-     * MÉTODOS que retornam o nome completo e o saldoBacário
-     * 
+     * MÉTODO que retornam o nome completo
      */
+
     public static String nomeCompleto(String primeiroNome, String segundoNome) {
         // return primeiroNome + " " + segundoNome;
         return primeiroNome.concat(" ").concat(segundoNome);

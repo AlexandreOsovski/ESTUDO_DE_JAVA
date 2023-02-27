@@ -5,32 +5,32 @@ import java.util.*;
 public class FabricaDeCarro {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            // pegar os dados daqui
+            System.out.println("Digite um numero: ");
+            int custoFabrica = scanner.nextInt();
 
-        // pegar os dados daqui
-        System.out.println("Digite um numero: ");
-        int custoFabrica = scanner.nextInt();
+            System.out.println("Digite mais numero: ");
+            int porcentagemDistribuidor = scanner.nextInt();
 
-        System.out.println("Digite mais numero: ");
-        int porcentagemDistribuidor = scanner.nextInt();
+            System.out.println("Digite um último numero: ");
+            int PercentualImpostos = scanner.nextInt();
 
-        System.out.println("Digite um último numero: ");
-        int PercentualImpostos = scanner.nextInt();
+            // variaveis
+            int custoConsumidor;
+            int Distribuidor;
+            int ValorImpostos;
 
-        // variaveis
-        int custoConsumidor;
-        int Distribuidor;
-        int ValorImpostos;
+            Distribuidor = (custoFabrica * porcentagemDistribuidor) / 100;
+            ValorImpostos = (PercentualImpostos * custoFabrica) / 100;
 
-        Distribuidor = (custoFabrica * porcentagemDistribuidor) / 100;
-        ValorImpostos = (PercentualImpostos * custoFabrica) / 100;
+            custoConsumidor = Distribuidor + ValorImpostos + custoFabrica;
 
-        custoConsumidor = Distribuidor + ValorImpostos + custoFabrica;
-
-        System.out.println("O custo do consumidor é: " + custoConsumidor);
+            System.out.println("O custo do consumidor é: " + custoConsumidor);
+        }
     }
     /**
-     * EXPLICAÇÃP:
+     * EXPLICAÇÃO:
      * 
      * O trecho "Scanner scanner = new Scanner(System.in);" cria um objeto da classe
      * Scanner que será usado para receber a entrada do usuário pelo console.

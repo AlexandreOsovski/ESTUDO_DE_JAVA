@@ -5,24 +5,24 @@ import java.util.*;
 
 public class FibonacciFacil {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Digite um número: ");
+            int N = scanner.nextInt();
 
-        System.out.println("Digite um número: ");
-        int N = scanner.nextInt();
+            int proximo, anterior = 0, atual = 1;
 
-        int proximo, anterior = 0, atual = 1;
+            for (int i = 1; i <= N; i++) {
 
-        for (int i = 1; i <= N; i++) {
+                if (i == N) {
+                    System.out.println(anterior);
+                } else {
+                    System.out.print(anterior + " ");
+                }
 
-            if (i == N) {
-                System.out.println(anterior);
-            } else {
-                System.out.print(anterior + " ");
+                proximo = anterior + atual;
+                anterior = atual;
+                atual = proximo;
             }
-
-            proximo = anterior + atual;
-            anterior = atual;
-            atual = proximo;
         }
     }
 

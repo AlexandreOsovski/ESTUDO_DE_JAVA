@@ -8,23 +8,23 @@ public class ImprimindoPositivoMedia {
     public static void main(String[] args) throws IOException {
 
         System.out.println("Por favor, digite 6 números: ");
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int cont = 0;
+            double soma = 0;
 
-        int cont = 0;
-        double soma = 0;
+            for (int i = 0; i < 6; i++) {
 
-        for (int i = 0; i < 6; i++) {
+                double valor = scanner.nextDouble();
 
-            double valor = scanner.nextDouble();
-
-            if (valor > 0) {
-                cont++;
-                soma += valor;
+                if (valor > 0) {
+                    cont++;
+                    soma += valor;
+                }
             }
-        }
 
-        System.out.println("São " + cont + " valores positivos");
-        System.out.println(String.format("A média dos valores é: " + "%.1f", soma / cont));
+            System.out.println("São " + cont + " valores positivos");
+            System.out.println(String.format("A média dos valores é: " + "%.1f", soma / cont));
+        }
     }
 
     /**

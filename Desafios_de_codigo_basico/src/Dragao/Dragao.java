@@ -6,17 +6,17 @@ public class Dragao {
     public static void main(String[] args) {
         int casos, poderDeLuta;
 
-        Scanner scanner = new Scanner(System.in);
+        try (Scanner scanner = new Scanner(System.in)) {
+            casos = scanner.nextInt();
 
-        casos = scanner.nextInt();
+            for (int i = 0; i < casos; i++) {
+                poderDeLuta = scanner.nextInt();
 
-        for (int i = 0; i < casos; i++) {
-            poderDeLuta = scanner.nextInt();
-
-            if (poderDeLuta <= 8000) {
-                System.out.println("Inseto!");
-            } else {
-                System.out.println("Mais de 8000!");
+                if (poderDeLuta <= 8000) {
+                    System.out.println("Inseto!");
+                } else {
+                    System.out.println("Mais de 8000!");
+                }
             }
         }
     }

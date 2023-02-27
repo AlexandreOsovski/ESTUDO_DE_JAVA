@@ -7,18 +7,19 @@
 <p>A estrutura básica de um método em Java é a seguinte:</p>
 
 <pre><code><b style="color: #2e95d3">&lt;modificador&gt;</b> <b style="color: 
-orange">&lt;tipo de retorno&gt;</b> &lt;nome do método&gt; (<b style="color: orange">&lt;lista de parâmetros&gt;</b>) {
+orange">&lt;tipo de retorno&gt;</b> &lt;nome do método&gt; (<b style="color: orange">&lt;lista de parâmetros&gt;</b>) &lt;exceções&gt; {
     // corpo do método
 }</code></pre>
 
 <p>Os elementos que compõem um método são:</p>
 
 <ul>
-	<li>Modificador: é uma palavra-chave que define a visibilidade e acessibilidade do método. Os modificadores mais comuns são public, private e protected.</li>
-	<li>Tipo de retorno: é o tipo de dado que o método retorna. Se o método não retornar nenhum valor, o tipo de retorno deve ser void.</li>
-	<li>Nome do método: é o identificador do método, que deve ser único dentro da classe.</li>
-	<li>Lista de parâmetros: são os dados que o método recebe como entrada. Os parâmetros são separados por vírgulas e são compostos pelo tipo de dado e pelo nome do parâmetro.</li>
-	<li>Corpo do método: é o bloco de código que contém as instruções que serão executadas quando o método for chamado.</li>
+	<li><strong>Modificador:</strong> é uma palavra-chave que define a visibilidade e acessibilidade do método. Os modificadores mais comuns são public, private e protected.</li><br>
+	<li><strong>Tipo de retorno:</strong> é o tipo de dado que o método retorna. Se o método não retornar nenhum valor, o tipo de retorno deve ser void.</li>
+	<li>Nome do método: é o identificador do método, que deve ser único dentro da classe.</li><br>
+	<li><strong>Lista de parâmetros:</strong> são os dados que o método recebe como entrada. Os parâmetros são separados por vírgulas e são compostos pelo tipo de dado e pelo nome do parâmetro.</li><br>
+	<li><strong>Exceções:</strong> são eventos que ocorrem durante a execução de um programa que interrompem o fluxo normal de execução. Quando uma exceção é lançada, ela é tratada por um bloco de código chamado de "tratador de exceção" ou "bloco catch", que é responsável por lidar com o erro e tomar as ações apropriadas.</li><br>
+	<li><strong>Corpo do método:</strong> é o bloco de código que contém as instruções que serão executadas quando o método for chamado.</li><br>
 </ul>
 
 <h2>Exemplo de método em Java</h2>
