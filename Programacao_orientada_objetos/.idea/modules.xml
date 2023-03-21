@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Heranca/Heranca.iml" filepath="$PROJECT_DIR$/Heranca/Heranca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Programacao_orientada_objetos.iml" filepath="$PROJECT_DIR$/.idea/Programacao_orientada_objetos.iml" />
+    </modules>
+  </component>
+</project>
